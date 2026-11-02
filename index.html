@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Web Technology Lab Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #14213d, #2563eb);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #64748b;
+}
+
+/* EXERCISE GRID */
+.exercise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD DESIGN */
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* CARD ICON */
+.card-top {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.blue { background: #dbeafe; }
+.purple { background: #ede9fe; }
+.green { background: #dcfce7; }
+.orange { background: #ffedd5; }
+.pink { background: #fce7f3; }
+.cyan { background: #cffafe; }
+.yellow { background: #fef3c7; }
+.red { background: #fee2e2; }
+.indigo { background: #e0e7ff; }
+.teal { background: #ccfbf1; }
+
+/* CARD CONTENT */
+.card-content {
+    padding: 23px;
+}
+
+.number {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2563eb;
+    letter-spacing: 1px;
+}
+
+.card h3 {
+    font-size: 19px;
+    margin: 12px 0;
+    color: #14213d;
+}
+
+.card p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    min-height: 45px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.card a {
+    display: block;
+    background: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #14213d;
+}
+
+/* FOOTER */
+footer {
+    background: #14213d;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+@media(max-width: 850px) {
+    .exercise-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+    .exercise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+    <h1>My Web Technology Lab</h1>
+    <p>All My Practical Exercises in One Place</p>
+</header>
+
+<!-- MAIN SECTION -->
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>My Exercises</h2>
+        <p>Explore all 10 Web Technology Lab exercises.</p>
+    </div>
+
+    <div class="exercise-grid">
+
+        <!-- EXERCISE 01 -->
+        <div class="card">
+            <div class="card-top green">🌱</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 01</span>
+                <h3>Online Plant Nursery</h3>
+                <p>Explore an online plant nursery website.</p>
+                <a href="./exercise-01/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 02 -->
+        <div class="card">
+            <div class="card-top purple">📚</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 02</span>
+                <h3>Cosmic Book Store</h3>
+                <p>Explore an interactive online bookstore.</p>
+                <a href="./exercise-02/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 03 -->
+        <div class="card">
+            <div class="card-top blue">🎓</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 03</span>
+                <h3>Educational Course Portal</h3>
+                <p>A platform for exploring educational courses.</p>
+                <a href="./exercise-03/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 04 -->
+        <div class="card">
+            <div class="card-top orange">🎨</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 04</span>
+                <h3>Advanced CSS3 Webpage</h3>
+                <p>Demonstration of advanced CSS3 properties.</p>
+                <a href="./exercise-04/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 05 -->
+        <div class="card">
+            <div class="card-top pink">📸</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 05</span>
+                <h3>Exercise 05</h3>
+                <p>Add your fifth Web Technology Lab exercise here.</p>
+                <a href="./exercise-05/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 06 -->
+        <div class="card">
+            <div class="card-top cyan">🛒</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 06</span>
+                <h3>Exercise 06</h3>
+                <p>Add your sixth Web Technology Lab exercise here.</p>
+                <a href="./exercise-06/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 07 -->
+        <div class="card">
+            <div class="card-top yellow">💻</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 07</span>
+                <h3>Exercise 07</h3>
+                <p>Add your seventh Web Technology Lab exercise here.</p>
+                <a href="./exercise-07/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 08 -->
+        <div class="card">
+            <div class="card-top red">⚡</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 08</span>
+                <h3>Exercise 08</h3>
+                <p>Add your eighth Web Technology Lab exercise here.</p>
+                <a href="./exercise-08/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 09 -->
+        <div class="card">
+            <div class="card-top indigo">🚀</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 09</span>
+                <h3>Exercise 09</h3>
+                <p>Add your ninth Web Technology Lab exercise here.</p>
+                <a href="./exercise-09/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+        <!-- EXERCISE 10 -->
+        <div class="card">
+            <div class="card-top teal">🏆</div>
+            <div class="card-content">
+                <span class="number">EXERCISE 10</span>
+                <h3>Exercise 10</h3>
+                <p>Add your tenth Web Technology Lab exercise here.</p>
+                <a href="./exercise-10/index.html">View Exercise →</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+    <p>© 2026 My Web Technology Lab Portfolio</p>
+    <p>Designed and Developed by Me</p>
+</footer>
+
+</body>
+</html>
