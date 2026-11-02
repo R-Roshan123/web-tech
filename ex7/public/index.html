@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HostelHub | Hostel Dashboard</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="logo"><span>⌂</span><strong>Hostel<span>Hub</span></strong></div>
+      <p class="menu-title">MAIN MENU</p>
+      <nav>
+        <button class="nav-link active" data-section="dashboard"><b>▦</b>Dashboard</button>
+        <button class="nav-link" data-section="students"><b>♙</b>Student Management</button>
+        <button class="nav-link" data-section="rooms"><b>▥</b>Room Management</button>
+        <button class="nav-link" data-section="fees"><b>₹</b>Fee Management</button>
+        <button class="nav-link" data-section="reports"><b>⌁</b>Reports</button>
+        <button class="nav-link" data-section="settings"><b>⚙</b>Settings</button>
+      </nav>
+      <div class="admin-profile"><div class="avatar">AD</div><div><strong>Admin Desk</strong><small>Administrator</small></div><span>•••</span></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button class="menu-toggle" id="menuToggle">☰</button><div><h1>Hostel Dashboard</h1><p>Welcome to HostelHub</p></div><div class="top-right"><span class="date" id="currentDate"></span><button class="bell">♧<i></i></button><div class="top-user"><div class="avatar small">AD</div><strong>Admin</strong><span>⌄</span></div></div></header>
+      <div id="toast" class="toast"></div>
+      <section id="dashboard" class="page-section active-page">
+        <div class="hero"><div><p class="eyebrow">HOSTEL ADMINISTRATION</p><h2>Welcome to HostelHub! <span>✦</span></h2><p>Manage your hostel operations efficiently and keep your community connected.</p></div><div class="building">⌂</div></div>
+        <div class="stats" id="stats"></div>
+        <div class="section-title"><div><p class="eyebrow">OVERVIEW</p><h2>Recent students</h2></div><button class="primary" data-open-student>Add student <b>+</b></button></div>
+        <div class="table-wrap"><table id="studentTable"><thead><tr><th>Student</th><th>ID</th><th>Course</th><th>Room</th><th>Fee status</th><th>Actions</th></tr></thead><tbody></tbody></table></div>
+      </section>
+      <section id="students" class="page-section"><div class="section-title"><div><p class="eyebrow">RECORDS</p><h2>Student management</h2></div><button class="primary" data-open-student>Add student <b>+</b></button></div><div class="toolbar"><div class="search">⌕<input id="studentSearch" placeholder="Search by name or student ID..."></div></div><div class="table-wrap"><table id="allStudentTable"><thead><tr><th>Student ID</th><th>Student name</th><th>Email</th><th>Phone</th><th>Course</th><th>Room</th><th>Fee status</th><th>Actions</th></tr></thead><tbody></tbody></table></div></section>
+      <section id="rooms" class="page-section"><div class="section-title"><div><p class="eyebrow">ACCOMMODATION</p><h2>Room management</h2></div></div><div class="room-grid" id="roomGrid"></div></section>
+      <section id="fees" class="page-section"><div class="section-title"><div><p class="eyebrow">PAYMENTS</p><h2>Fee management</h2></div></div><div class="fee-summary" id="feeSummary"></div><div class="table-wrap"><table id="feeTable"><thead><tr><th>Student</th><th>Student ID</th><th>Room</th><th>Hostel fee</th><th>Payment status</th><th>Payment date</th></tr></thead><tbody></tbody></table></div></section>
+      <section id="reports" class="page-section"><div class="section-title"><div><p class="eyebrow">INSIGHTS</p><h2>Hostel reports</h2></div></div><div class="report-grid" id="reportGrid"></div></section>
+      <section id="settings" class="page-section"><div class="section-title"><div><p class="eyebrow">CONFIGURATION</p><h2>Settings</h2></div></div><div class="settings-card"><h3>HostelHub preferences</h3><label>Hostel name<input value="HostelHub" id="hostelName"></label><label>Notifications <input type="checkbox" checked></label><button class="primary" id="saveSettings">Save settings</button></div></section>
+    </main>
+  </div>
+  <div class="modal hidden" id="studentModal"><div class="modal-box"><button class="close" id="closeModal">×</button><p class="eyebrow">STUDENT RECORD</p><h2 id="modalTitle">Register student</h2><form id="studentForm"><input type="hidden" id="editId"><label>Full name<input id="name" required></label><div class="form-grid"><label>Email address<input type="email" id="email" required></label><label>Phone number<input id="phone" required></label><label>Gender<select id="gender" required><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></label><label>Department / course<input id="course" required></label><label>Room number<select id="room" required></select></label></div><button class="primary full" type="submit">Save student</button></form></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
