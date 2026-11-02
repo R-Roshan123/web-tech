@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSphere - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Learn<span>Sphere</span></h1>
+    <p>Educational Course Portal</p>
+</header>
+
+<section class="hero">
+    <h2>Join LearnSphere</h2>
+    <p>Start Your Learning Journey Today!</p>
+</section>
+
+<main class="container">
+    <section class="info">
+        <h2>Create Your Student Account</h2>
+        <p>Register with LearnSphere and explore educational courses
+        to improve your knowledge and skills.</p>
+
+        <div class="info-card">
+            <h3>📚 Explore Courses</h3>
+            <p>Access Web Development, Data Science and Artificial Intelligence.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🎓 Learn Anytime</h3>
+            <p>Develop your skills through interactive learning programs.</p>
+        </div>
+    </section>
+
+    <section class="form-box">
+        <h2>Student Registration</h2>
+
+        <form id="signupForm" novalidate>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span id="nameError" class="error"></span>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span id="emailError" class="error"></span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create password">
+            <span id="passError" class="error"></span>
+
+            <label for="course">Select Course</label>
+            <select id="course">
+                <option value="">Choose a Course</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+            <span id="courseError" class="error"></span>
+
+            <button type="submit">Register Now</button>
+
+            <div id="result"></div>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 LearnSphere Educational Course Portal</p>
+    <p>Exercise 05 - JavaScript Form Validation</p>
+</footer>
+
+</body>
+</html>
