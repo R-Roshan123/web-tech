@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnSphere - Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">Learn<span>Sphere</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#planner">Study Planner</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="tag">STUDENT LEARNING MANAGEMENT</span>
+            <h1>Plan Your Learning.<br><span>Achieve Your Goals.</span></h1>
+            <p>
+                Organize your assignments, manage your study schedule
+                and track your learning progress with LearnSphere.
+            </p>
+            <a href="#planner" class="hero-btn">Start Planning →</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container" id="planner">
+
+        <div class="section-heading">
+            <h2>My Study Planner</h2>
+            <p>Manage your assignments and daily learning activities.</p>
+        </div>
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <h2 id="totalCount">0</h2>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">⏳</div>
+                <h2 id="openCount">0</h2>
+                <p>Pending Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <h2 id="completedCount">0</h2>
+                <p>Completed Tasks</p>
+            </div>
+
+        </section>
+
+        <!-- Add Task -->
+        <section class="planner-card">
+
+            <h2>Add New Study Task</h2>
+
+            <p class="description">
+                Enter your assignment, subject or learning activity.
+            </p>
+
+            <form id="taskForm">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your study task..."
+                    maxlength="100"
+                    required
+                >
+
+                <button type="submit" id="addButton">
+                    + Add Task
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Task List -->
+        <section class="task-section">
+
+            <div class="task-heading">
+                <div>
+                    <h2>My Learning Tasks</h2>
+                    <p>Track and manage your study activities.</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    All Tasks
+                </button>
+
+                <button class="filter-btn" data-filter="open">
+                    Pending
+                </button>
+
+                <button class="filter-btn" data-filter="done">
+                    Completed
+                </button>
+
+            </div>
+
+            <!-- Task List -->
+            <ul id="taskList"></ul>
+
+            <!-- Counter -->
+            <p id="counter">0 tasks remaining</p>
+
+            <p id="emptyMessage">
+                No tasks available. Add your first study task!
+            </p>
+
+        </section>
+
+        <!-- About -->
+        <section class="about" id="about">
+
+            <h2>Learn Smarter with LearnSphere</h2>
+
+            <p>
+                The Student Study Planner helps learners organize
+                assignments, manage academic activities and monitor
+                their daily progress through a simple task management
+                system.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Learn<span>Sphere</span></h3>
+        <p>Educational Course Portal</p>
+        <p>Exercise 06 - JavaScript Functions</p>
+        <p>© 2026 LearnSphere. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
